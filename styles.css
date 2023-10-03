@@ -133,6 +133,8 @@ button:hover {
 }
 @media (max-width: 576px) {
     .calculator {
+       height: 20vh;
+        overflow-y: auto; /* in case content overflows the 20% height */
         font-size: 9px;
         padding: 15px;
     }
