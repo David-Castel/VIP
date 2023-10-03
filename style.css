@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a2a2d;
+    background-image: url(https://media.discordapp.net/attachments/1156744638376456292/1158672199708844083/thejourney_ocenic_blue_background_vaporwave_create_similar_6d77aedc-2e58-4dff-bd13-1b7a30958649.png?ex=651d1913&is=651bc793&hm=83283d766e47161b47bc71ccfe2a9584f646b3d3326de6d121b0dba0fccfe43b&=&width=1402&height=1402);
+    background-size: cover;
+    background-position: center;
+    color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.background-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(255,255,255,0.04),
+        rgba(255,255,255,0.04) 1px,
+        transparent 1px,
+        transparent 5px
+    );
+    z-index: -1;
+}
+.calculator {
+    backdrop-filter: blur(15px);
+    background: rgba(36, 78, 88, 0.85); 
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    padding: 3em;
+    width: 100%;
+}
+
+h1 {
+    color: #d9e7e9;
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.input-group {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+label {
+    color: #a3c1c9;
+    display: block;
+    flex: 0 0 65%;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+select, input {
+    width: 32%;
+    margin-top: 3.5em;
+    border: .5px solid  rgba(36, 78, 88, 0.85);
+    background-color: rgba(36, 78, 88, 0.85); /* Oceanic blue background for dropdown and input fields */
+    color: #f0f4f8;
+    padding: 0.6em;
+    font-size: 0.9em;
+    border-radius: 8px; 
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+select:focus, input:focus {
+    background: rgba(132, 250, 176, 0.2); /* Green tint when focused */
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(132, 250, 176, 0.5); /* Green glow effect */
+    border-color: #84fab0;
+}
+
+select {
+    appearance: none;
+    background: rgba(36, 78, 88, 0.85) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23f0f4f8" d="M6 9l6 6 6-6z"/></svg>') no-repeat 95% center; /* Arrow icon for dropdown */
+    background-size: 12px; /* Adjust arrow icon size */
+    cursor: pointer;
+    padding-right: 1.5em; /* Make room for arrow icon */
+}
+select option {
+    background-color:rgba(36, 78, 88, 0.85); /* Replace #YOUR_COLOR with the desired color */
+}
+
+button {
+    background: linear-gradient(145deg, #308e9a, #4ba9b8);
+    border: none;
+box-shadow: 0 0 12px #5bc2d0, 0 0 12px #5bc2d0;
+    color: white;
+  border-radius: 50px !important;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: .9em;
+    transition: background 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #4ba9b8, #308e9a);
+    transform: translateY(-5px);
+}
+
+.total-payout {
+    background: linear-gradient(145deg, #34a344, #6bc765);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 -10px 30px rgba(132, 250, 176, 0.2);
+    color: white;
+    display: inline-block;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    padding: 1.2em 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.total-payout:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 -15px 35px rgba(132, 250, 176, 0.3);
+    transform: translateY(-5px);
+}
