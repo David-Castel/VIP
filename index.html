@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
 
 <head>
-<!-- Bootstrap CSS -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Earnings Calculator</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <title>VIP 
-      Earnings Calculator</title>
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <div class="calculator">
-        <h1>VIP<br> Earnings Calculator</h1>
 
+<body style="display: flex; flex-direction: column; justify-content: center; height: 100vh;">
+    <div class="container text-center">
+        <div class="calculator mx-auto" style="width: fit-content;">
+            <h1>VIP<br> Earnings Calculator</h1>
+
+            
+			
+			
+			
+			
+			
         <!-- Postpaid Units Selection with Custom Input Field -->
         <div class="input-group">
             <label for="postpaid">Activated Postpaid Units:</label>
@@ -119,10 +127,40 @@
     <div class="layer foreground"></div>
 </div>
       
-        <button onclick="calculateEarnings()">Calculate</button>
-       <h2 class="total-payout">Total Payout: $<span id="output">0.00</span></h2>
+    
 
 
+       <button class="btn btn-primary mt-3" onclick="calculateEarnings()">Calculate</button> <!-- Bootstrap button styles -->
+            <h2 class="total-payout mt-3">Total Payout: $<span id="output">0.00</span></h2> <!-- Bootstrap spacing class added -->
+        </div>
+    </div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+            <div class="background-lines"></div>
+            <div class="parallax">
+                <div class="layer background"></div>
+                <div class="layer foreground"></div>
+   
     <script src="script.js"></script>
 </body>
+
 </html>
