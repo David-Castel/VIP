@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+     font-size: 12px; /* Default font size */
     background-color: #1a2a2d;
     background-image: url(https://media.discordapp.net/attachments/1156744638376456292/1158672199708844083/thejourney_ocenic_blue_background_vaporwave_create_similar_6d77aedc-2e58-4dff-bd13-1b7a30958649.png?ex=651d1913&is=651bc793&hm=83283d766e47161b47bc71ccfe2a9584f646b3d3326de6d121b0dba0fccfe43b&=&width=1402&height=1402);
     background-size: cover;
@@ -137,7 +138,13 @@ button:hover {
         font-size: 0.8em; /* Adjusts font-size for everything within .calculator */
         padding: 15px;
     }
-
+  body {
+        font-size: 14px; /* Slightly smaller font size for mobile devices */
+        background-size: auto; /* Adjust as needed based on how the image looks */
+        height: auto;
+        min-height: 100vh; /* Ensures the body fills the screen but can expand if needed */
+        padding: 20px; /* A bit of space so content isn't pressed against the screen edges */
+    }
     button {
         padding: 10px 20px;
         font-size: 0.7em; /* Further reduce the font size for buttons */
