@@ -4,7 +4,7 @@
 <head>
     <!-- Meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=.5">
     <title>VIP Earnings Calculator</title>
     
     <!-- Bootstrap CSS -->
@@ -24,12 +24,19 @@
 </head>
 
 <body style="display: flex; flex-direction: column; justify-content: center; height: 100vh;">
-    <div class="container text-center">
-        <div class="calculator mx-auto" style="width: fit-content;">
+
+    <div class="container text-center">      <div class="container mt-5">
+      
+        <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          
+          
+        <div class="calculator mx-auto" style="width: 100%;">
+            <div class="background-lines"></div>
             <h1>VIP<br> Earnings Calculator</h1>
 
             
-			
+			  <div class="input-group mb-3">
 			
 			
 			
@@ -120,46 +127,20 @@
             </select>
             <input type="number" id="nonMobileProtection-custom" placeholder="Enter units" style="display:none;">
         </div>
-<div class="background-lines"></div>
 
-      <div class="parallax">
-    <div class="layer background"></div>
-    <div class="layer foreground"></div>
-</div>
-      
-    
-
-
-       <button class="btn btn-primary mt-3" onclick="calculateEarnings()">Calculate</button> <!-- Bootstrap button styles -->
+<button class="btn btn-primary mt-3" onclick="calculateEarnings()">Calculate</button> <!-- Bootstrap button styles -->
             <h2 class="total-payout mt-3">Total Payout: $<span id="output">0.00</span></h2> <!-- Bootstrap spacing class added -->
         </div>
+          
+                   </div>
+        </div>
     </div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-
-            <div class="background-lines"></div>
-            <div class="parallax">
-                <div class="layer background"></div>
-                <div class="layer foreground"></div>
-   
+</div>
+          
+          
+          
+          
+          
     <script src="script.js"></script>
 </body>
 
