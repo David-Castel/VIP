@@ -131,17 +131,17 @@ button:hover {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 -15px 35px rgba(132, 250, 176, 0.3);
     transform: translateY(-5px);
 }
-@media (max-width: 576px) {
+@media (max-width: 500px) {
     .calculator {
        height: 20vh;
         overflow-y: auto; /* in case content overflows the 20% height */
-        font-size: 9px;
+        font-size: 7px;
         padding: 15px;
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 500px) {
     button {
         padding: 10px 20px;
-        font-size: 10px;
+        font-size: 7px;
     }
 }
