@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+
+<head>
+<!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>VIP 
+      Earnings Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>VIP<br> Earnings Calculator</h1>
+
+        <!-- Postpaid Units Selection with Custom Input Field -->
+        <div class="input-group">
+            <label for="postpaid">Activated Postpaid Units:</label>
+            <select id="postpaid" onchange="toggleInput('postpaid', 'postpaid-custom')">
+                <option value="0" selected>0 Units</option>
+                <option value="1">1 Unit</option>
+                <option value="2">2 Units</option>
+                <option value="3">3 Units</option>
+                <option value="4">4 Units</option>
+                <option value="other">Other...</option>
+            </select>
+            <input type="number" id="postpaid-custom" placeholder="Enter units" style="display:none;">
+        </div>
+
+        <!-- Prepaid Units Selection with Custom Input Field -->
+        <div class="input-group">
+<label for="prepaid">Activated Prepaid Units:</label>
+<select id="prepaid" onchange="toggleInput('prepaid', 'prepaid-custom')">
+    <option value="0" selected>0 Units</option>
+    <option value="1">1 Unit</option>
+    <option value="2">2 Units</option>
+    <option value="3">3 Units</option>
+    <option value="4">4 Units</option>
+    <option value="5">5 Units</option>
+    <option value="6">6 Units</option>
+    <option value="7">7 Units</option>
+    <option value="8">8 Units</option>
+    <option value="9">9 Units</option>
+    <option value="10">10 Units</option>
+    <option value="other">Other...</option>
+</select>
+            <input type="number" id="prepaid-custom" placeholder="Enter units" style="display:none;">
+        </div>
+
+        <!-- Mobile Protection Units Selection with Custom Input Field -->
+        <div class="input-group">
+            <label for="mobileProtection">Mobile Protection Units (Individual/AppleCare+):</label>
+            <select id="mobileProtection" onchange="toggleInput('mobileProtection', 'mobileProtection-custom')">
+                <option value="0" selected>0 Units</option>
+                <option value="1">1 Unit</option>
+                <option value="2">2 Units</option>
+                <option value="3">3 Units</option>
+                <option value="4">4 Units</option>
+                <option value="other">Other...</option>
+            </select>
+            <input type="number" id="mobileProtection-custom" placeholder="Enter units" style="display:none;">
+        </div>
+
+        <!-- Allstate Family Selection with Custom Input Field -->
+        <div class="input-group">
+            <label for="allStateFamily">Allstate Family:</label>
+            <select id="allStateFamily" onchange="toggleInput('allStateFamily', 'allStateFamily-custom')">
+                <option value="0" selected>0 Units</option>
+                <option value="1">1 Unit</option>
+                <option value="2">2 Units</option>
+                <option value="other">Other...</option>
+            </select>
+            <input type="number" id="allStateFamily-custom" placeholder="Enter units" style="display:none;">
+        </div>
+
+        <!-- Mobile Accessories Input -->
+        <div class="input-group">
+            <label for="accessories">Mobile Accessories ($2 per $200):</label>
+            <input type="number" id="accessories" placeholder="Enter dollar amount">
+        </div>
+
+        <!-- Non-Mobile Protection Units Selection with Custom Input Field -->
+        <div class="input-group">
+            <label for="nonMobileProtection">Non-Mobile Protection Units:</label>
+            <select id="nonMobileProtection" onchange="toggleInput('nonMobileProtection', 'nonMobileProtection-custom')">
+<option value="0" selected>0 Units</option>
+<option value="1">1 Unit</option>
+<option value="2">2 Units</option>
+<option value="3">3 Units</option>
+<option value="4">4 Units</option>
+<option value="5">5 Units</option>
+<option value="6">6 Units</option>
+<option value="7">7 Units</option>
+<option value="8">8 Units</option>
+<option value="9">9 Units</option>
+<option value="10">10 Units</option>
+<option value="other">Other...</option>
+
+            </select>
+            <input type="number" id="nonMobileProtection-custom" placeholder="Enter units" style="display:none;">
+        </div>
+<div class="background-lines"></div>
+
+      <div class="parallax">
+    <div class="layer background"></div>
+    <div class="layer foreground"></div>
+</div>
+      
+        <button onclick="calculateEarnings()">Calculate</button>
+       <h2 class="total-payout">Total Payout: $<span id="output">0.00</span></h2>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
